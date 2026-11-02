@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,32 +8,26 @@
 <body>
 
     <div class="container">
-
         <h1>Student Registration</h1>
 
         <form id="studentForm">
 
-            <label>Student Name:</label>
-            <input type="text" id="studentName"
-                   placeholder="Enter student name" required>
+            <label>Student Name</label>
+            <input type="text" id="studentName" required>
 
-            <label>Roll Number:</label>
-            <input type="text" id="rollNumber"
-                   placeholder="Enter roll number" required>
+            <label>Roll Number</label>
+            <input type="text" id="rollNumber" required>
 
-            <label>Email:</label>
-            <input type="email" id="studentEmail"
-                   placeholder="Enter email" required>
+            <label>Email</label>
+            <input type="email" id="studentEmail" required>
 
-            <label>Password:</label>
-            <input type="password" id="studentPassword"
-                   placeholder="Create password" required>
+            <label>Password</label>
+            <input type="password" id="studentPassword" required>
 
-            <label>Phone Number:</label>
-            <input type="tel" id="studentPhone"
-                   placeholder="Enter phone number" required>
+            <label>Phone Number</label>
+            <input type="tel" id="studentPhone" required>
 
-            <label>Branch:</label>
+            <label>Branch</label>
             <select id="studentBranch" required>
                 <option value="">Select Branch</option>
                 <option>CSE</option>
@@ -40,9 +35,10 @@
                 <option>EEE</option>
                 <option>Mechanical</option>
                 <option>Civil</option>
+                <option>Other</option>
             </select>
 
-            <label>Year of Study:</label>
+            <label>Year</label>
             <select id="studentYear" required>
                 <option value="">Select Year</option>
                 <option>1st Year</option>
@@ -51,17 +47,21 @@
                 <option>4th Year</option>
             </select>
 
-            <button type="submit">Register Student</button>
+            <label>CGPA</label>
+            <input type="number" id="studentCgpa"
+                   min="0" max="10" step="0.01" required>
+
+            <button type="submit">Register</button>
 
         </form>
 
-        <p>Already registered? <a href="index.html">Login Here</a></p>
-
         <p id="message"></p>
 
+        <p>Already registered?
+            <a href="index.html">Login here</a>
+        </p>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

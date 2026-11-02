@@ -1,19 +1,49 @@
+
 body {
-    font-family: Arial;
-    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
     margin: 0;
+    color: #222;
 }
 
 .container {
     background-color: white;
     width: 400px;
+    max-width: 90%;
     margin: 40px auto;
-    padding: 20px;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+    background: white;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
 }
 
 h1, h2 {
-    color: darkblue;
+    color: #183b63;
+}
+
+h1 {
     text-align: center;
+}
+
+.topbar h1 {
+    text-align: left;
 }
 
 label {
@@ -21,37 +51,111 @@ label {
     margin-top: 12px;
 }
 
-input, select {
+input, select, textarea {
     width: 100%;
-    padding: 8px;
+    padding: 9px;
     margin-top: 5px;
     box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 4px;
 }
 
 button {
-    background-color: blue;
+    background-color: #245b91;
     color: white;
     padding: 10px;
     border: none;
+    border-radius: 4px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 18px;
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #173f68;
+}
+
+.small-button {
+    width: auto;
+    margin: 0;
+    padding: 9px 18px;
+}
+
 p {
-    text-align: center;
+    line-height: 1.5;
 }
 
 a {
-    color: blue;
+    color: #245b91;
 }
 
-.detail {
-    background-color: #eeeeee;
-    padding: 10px;
-    margin-top: 10px;
+.demo, .panel, .card {
+    background: #f1f5f9;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-#message {
-    color: red;
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.stat {
+    background: #eaf1f8;
+    padding: 15px;
+    min-width: 140px;
+    border-radius: 5px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 24px;
+    color: #183b63;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 9px;
+    text-align: left;
+}
+
+th {
+    background: #eaf1f8;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.empty {
+    background: #f7f9fb;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.action-button {
+    width: auto;
+    margin: 3px;
+    padding: 7px 10px;
+}
+
+@media (max-width: 600px) {
+    .page {
+        width: auto;
+        margin: 10px;
+        padding: 14px;
+    }
 }

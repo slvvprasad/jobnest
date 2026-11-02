@@ -1,24 +1,113 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Placement Management Dashboard</title>
+    <title>Placement Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="page">
 
-        <h1>Placement Management Dashboard</h1>
+        <div class="topbar">
+            <div>
+                <h1>College Placement System</h1>
+                <p id="welcome"></p>
+            </div>
 
-        <h2 id="welcome"></h2>
+            <button id="logoutButton" class="small-button">
+                Logout
+            </button>
+        </div>
 
-        <div id="details"></div>
+        <!-- ADMIN DASHBOARD -->
 
-        <button type="button" onclick="logout()">Logout</button>
+        <div id="adminSection" class="hidden">
+
+            <h2>Admin Dashboard</h2>
+
+            <div id="adminStats" class="stats"></div>
+
+            <h3>Registered Students</h3>
+            <div id="adminStudents"></div>
+
+            <h3>Registered Companies</h3>
+            <div id="adminCompanies"></div>
+
+            <h3>All Job Opportunities</h3>
+            <div id="adminJobs"></div>
+
+            <h3>All Applications</h3>
+            <div id="adminApplications"></div>
+
+        </div>
+
+        <!-- STUDENT DASHBOARD -->
+
+        <div id="studentSection" class="hidden">
+
+            <h2>Student Dashboard</h2>
+
+            <h3>My Profile</h3>
+            <div id="studentProfile" class="panel"></div>
+
+            <h3>Available Jobs</h3>
+            <div id="availableJobs"></div>
+
+            <h3>My Applications</h3>
+            <div id="myApplications"></div>
+
+        </div>
+
+        <!-- COMPANY DASHBOARD -->
+
+        <div id="companySection" class="hidden">
+
+            <h2>Company Dashboard</h2>
+
+            <h3>Company Profile</h3>
+            <div id="companyProfile" class="panel"></div>
+
+            <h3>Post a Job</h3>
+
+            <div class="panel">
+
+                <form id="jobForm">
+
+                    <label>Job Title</label>
+                    <input type="text" id="jobTitle" required>
+
+                    <label>Job Description</label>
+                    <textarea id="jobDescription" required></textarea>
+
+                    <label>Package (LPA)</label>
+                    <input type="number" id="jobPackage"
+                           min="0" step="0.1" required>
+
+                    <label>Eligible Branches</label>
+                    <input type="text" id="jobBranches"
+                           placeholder="Example: CSE, ECE" required>
+
+                    <label>Minimum CGPA</label>
+                    <input type="number" id="jobCgpa"
+                           min="0" max="10" step="0.1" required>
+
+                    <button type="submit">Post Job</button>
+
+                </form>
+
+            </div>
+
+            <h3>My Job Posts</h3>
+            <div id="companyJobs"></div>
+
+            <h3>Student Applicants</h3>
+            <div id="companyApplicants"></div>
+
+        </div>
 
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,50 +8,36 @@
 <body>
 
     <div class="container">
-
         <h1>Company Registration</h1>
 
         <form id="companyForm">
 
-            <label>Company Name:</label>
-            <input type="text" id="companyName"
-                   placeholder="Enter company name" required>
+            <label>Company Name</label>
+            <input type="text" id="companyName" required>
 
-            <label>Contact Person:</label>
-            <input type="text" id="contactPerson"
-                   placeholder="Enter contact person name" required>
+            <label>Contact Person</label>
+            <input type="text" id="contactPerson" required>
 
-            <label>Email:</label>
-            <input type="email" id="companyEmail"
-                   placeholder="Enter company email" required>
+            <label>Email</label>
+            <input type="email" id="companyEmail" required>
 
-            <label>Password:</label>
-            <input type="password" id="companyPassword"
-                   placeholder="Create password" required>
+            <label>Password</label>
+            <input type="password" id="companyPassword" required>
 
-            <label>Job Role:</label>
-            <input type="text" id="jobRole"
-                   placeholder="Example: Software Developer" required>
-
-            <label>Package (LPA):</label>
-            <input type="text" id="package"
-                   placeholder="Example: 5 LPA" required>
-
-            <label>Company Location:</label>
-            <input type="text" id="companyLocation"
-                   placeholder="Enter company location" required>
+            <label>Location</label>
+            <input type="text" id="companyLocation" required>
 
             <button type="submit">Register Company</button>
 
         </form>
 
-        <p>Already registered? <a href="index.html">Login Here</a></p>
-
         <p id="message"></p>
 
+        <p>Already registered?
+            <a href="index.html">Login here</a>
+        </p>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
