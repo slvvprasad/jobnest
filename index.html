@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Management System - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>JobNest</h1>
+        <h2>Login</h2>
+
+        <form id="loginForm">
+
+            <label>User Type:</label>
+            <select id="loginType" required>
+                <option value="">Select User Type</option>
+                <option value="student">Student</option>
+                <option value="company">Company</option>
+            </select>
+
+            <label>Email:</label>
+            <input type="email" id="loginEmail"
+                   placeholder="Enter your email" required>
+
+            <label>Password:</label>
+            <input type="password" id="loginPassword"
+                   placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>New Student? <a href="student-register.html">Register Here</a></p>
+
+        <p>New Company? <a href="company-register.html">Register Here</a></p>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

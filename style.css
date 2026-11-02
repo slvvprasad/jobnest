@@ -1,0 +1,57 @@
+body {
+    font-family: Arial;
+    background-color: lightblue;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+.detail {
+    background-color: #eeeeee;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#message {
+    color: red;
+}
